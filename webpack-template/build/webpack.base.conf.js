@@ -102,7 +102,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '-': '@types/lodash/ts3.1/index',
+      'R': 'ramda/dist/ramda.min.js',
       '~': PATHS.src,
       'vue$': 'vue/dist/vue.js',
     }
