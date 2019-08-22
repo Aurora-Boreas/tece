@@ -7,5 +7,6 @@
 </template>
 
 <style lang="sass">
+@import "./libs/flexboxgrid/css/flexboxgrid.min.css"
 
 </style>
