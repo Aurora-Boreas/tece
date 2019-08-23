@@ -5,6 +5,4 @@
   </div>
 </template>
 
-<style lang="sass">
-@import "./libs/css/flexboxgrid.min.css"
-</style>
+<style lang="scss" src="./css/main.scss">

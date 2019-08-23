@@ -1,8 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-import InstallerAccount from "@/views/InstallerAccount";
-import LoginInstaller from "@/components/InstallerAccount/Auth/Login";
-import RegisterInstaller from "@/components/InstallerAccount/Auth/Register";
+import Register from "@/components/Auth/Register";
+import InstallerAccount from "./views/InstallerAccount"
 
 Vue.use(Router);
 
@@ -10,20 +9,9 @@ export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
-    {
-      path: "/installer_account",
-      name: "installer_account",
-      component: InstallerAccount,
-      children: [
-        {
-          path: "login",
-          component: LoginInstaller
-        },
-        {
-          path: "register",
-          component: RegisterInstaller
-        }
-      ]
-    }
+    { name: "register", path: "/register", component: Register },
+    { name: "installer-account", path: "/installer-account", component: InstallerAccount },
+    { name: "installer-profile", path: "/installer-account/profile", component: InstallerAccount, props: {activeBlock: "Profile"}},
+    { name: "installer-points", path: "/installer-account/points", component: InstallerAccount, props: {activeBlock: "Points"}}
   ]
 });

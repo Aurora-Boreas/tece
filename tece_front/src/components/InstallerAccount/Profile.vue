@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Register</h1>
+  <div class="installer-profile">
+    <h2>профиль</h2>
   </div>
 </template>
 
@@ -12,5 +12,5 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="scss" scoped>
 </style>
