@@ -1,12 +1,12 @@
 <template>
   <div class="installer-points">
-    <h2>мои баллы</h2>
+    <h2>Академия</h2>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Points',
+    name: 'Academy',
     data() {
       return {};
     }
@@ -15,4 +15,3 @@
 
 <style lang="scss" scoped>
 </style>
-

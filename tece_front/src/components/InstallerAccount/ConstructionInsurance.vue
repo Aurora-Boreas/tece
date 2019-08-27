@@ -1,12 +1,12 @@
 <template>
-  <div class="installer-points">
-    <h2>мои баллы</h2>
+  <div class="installer-insurance">
+    <h2>Страхование объектов</h2>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Points',
+    name: 'ConstructionInsurance',
     data() {
       return {};
     }
@@ -15,4 +15,3 @@
 
 <style lang="scss" scoped>
 </style>
-
