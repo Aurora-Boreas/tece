@@ -105,6 +105,8 @@ module.exports = {
       'R': 'ramda/dist/ramda.min.js',
       '~': PATHS.src,
       'vue$': 'vue/dist/vue.js',
+      'components': PATHS.resolve(__dirname, '../src/components'),
+      'assets': PATHS.resolve(__dirname, '../src/assets')
     }
   },
   plugins: [

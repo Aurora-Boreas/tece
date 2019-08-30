@@ -2,7 +2,7 @@
   <div class="header-panel relative">
     <div class="container flex between-xs">
       <div class="logo">
-        <router-link to="#">
+        <router-link to="/">
           <img src="../../assets/tece_logo.svg" alt="TECE">
         </router-link>
       </div>

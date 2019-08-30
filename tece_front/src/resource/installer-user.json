@@ -1,0 +1,119 @@
+{
+  "id": "УК 459763221",
+  "name": "Соколов Николай Константинович",
+  "company": "Компания",
+  "region": "",
+  "city": "Александровск-Сахалинский",
+  "category": "Мастер",
+  "about": "some text",
+  "since_registration": "1 год 2 месяца",
+  "specialization": [
+    {
+      "skill": "Отопление",
+      "is_tece": "1"
+    },
+    {
+      "skill": "Теплый пол",
+      "is_tece": "1"
+    },
+    {
+      "skill": "Внутренняя канализация",
+      "is_tece": "1"
+    },
+    {
+      "skill": "Теплоизоляция"
+    }
+  ],
+  "avatar" : "assets/logo.png",
+  "social_links": [
+    { "name": "facebook",
+      "link": "https://facebook.com",
+      "icon": "../../assets/image/installer_account/avatar.jpg"
+    },
+    { "name": "instagram",
+      "link": "https://instagram.com",
+      "icon": "/assets/image/installer_account/avatar.jpg"
+    },
+    { "name": "vkontakte",
+      "link": "https://vk.com",
+      "icon": "../assets/image/installer_account/avatar.jpg"
+    }
+  ],
+  "objects": [
+    { "name": "Дача Тимошкино 2015 г.",
+      "technologies":  [
+        {"item":"Система водоснабжения"},
+        {"item":"Система отопления"},
+        {"item":"Система теплый пол"},
+        {"item":"Система сантехники"},
+        {"item":"Внутренняя канализация"}
+      ],
+      "images": [
+        {"image": "cottage"},
+        {"image": "cottage_1"},
+        {"image": "factory"}
+      ]
+    },
+    { "name": "Моторный завод 2015 г.",
+      "technologies":  [
+        {"item":"Система close to you"},
+        {"item":"Система отопления"},
+        {"item":"Система водоснабжения"}
+      ],
+      "images": [
+        {"image": "factory_1"},
+        {"image": "cottage"},
+        {"image": "cottage_1"},
+        {"image": "factory"}
+      ]
+    },
+    { "name": "Коттедж Барвиха 2014 г.",
+      "technologies":  [
+        {"item":"Система водоснабжения"},
+        {"item":"Система отопления"}
+      ],
+      "images": [
+        {"image": "cottage_1"},
+        {"image": "cottage"},
+        {"image": "factory"}
+      ]
+    },
+    { "name": "Дача Тимошкино 2015 г.",
+      "technologies":  [
+        {"item":"Система водоснабжения"},
+        {"item":"Система отопления"}
+      ],
+      "images": [
+        {"image": "cottage"},
+        {"image": "cottage_1"},
+        {"image": "factory"}
+      ]
+    },
+    { "name": "Маслянный завод 2015 г.",
+      "technologies":  [
+        {"item":"Система канализации"},
+        {"item":"Система отопления"}
+      ],
+      "images": [
+        {"image": "factory"},
+        {"image": "cottage"},
+        {"image": "cottage_1"},
+        {"image": "factory_1"}
+      ]
+    },
+    { "name": "Моторный завод 2015 г.",
+      "technologies":  [
+        {"item":"Система close to you"},
+        {"item":"Система отопления"},
+        {"item":"Система водоснабжения"}
+      ],
+      "images": [
+        {"image": "factory_1"},
+        {"image": "cottage"},
+        {"image": "cottage_1"},
+        {"image": "factory"}
+      ]
+    }
+  ]
+}
+
