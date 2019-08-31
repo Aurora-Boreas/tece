@@ -1,6 +1,11 @@
 <template>
   <div class="installer_object">
-    <carousel :per-page="1" :mouse-drag="false" :paginationEnabled="false" :navigationEnabled="true" v-if="user.images">
+    <carousel
+            :per-page="1"
+            :mouse-drag="false"
+            :paginationEnabled="false"
+            :navigationEnabled="true"
+            v-if="user.images">
       <slide v-for="(slide, index) in user.images" :key="index">
         <img class="object_img mw-100" :src="getImage(slide.image)" :alt="user.name">
       </slide>

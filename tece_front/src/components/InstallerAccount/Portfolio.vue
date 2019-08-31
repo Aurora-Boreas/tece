@@ -84,17 +84,35 @@
       <div class="col-xs-12 objects_info">
         <div class="inner">
           <div class="inner_header metronic weight-700 flex flex-wrap">Мои объекты</div>
-          <div class="row">
-            <installer-object class="user_objects" v-for="(user_object, index) in user.objects" :key="index" :user="user_object"/>
-          </div>
+
+          <draggable
+            class="list-group"
+            v-model="user.objects"
+            v-bind="dragOptions"
+            @start="drag = true"
+            @end="drag = false"
+          >
+            <transition-group type="transition" :name="!drag ? 'flip-list' : null" class="list-transition">
+              <installer-object class="user_objects list-group-item" v-for="(user_object, index) in user.objects" :key="index" :user="user_object"/>
+            </transition-group>
+          </draggable>
+
           <div class="total row metronic weight-700 end-xs">
             Всего объектов: 6
           </div>
         </div>
       </div>
       <div class="col-xs-12 flex between-xs">
-        <button class="btn btn-dark-blue btn-share" title="Поделиться"/>
-        <div class="btn btn-dark-blue brn-send-bid">Отправить заявку</div>
+        <div class="share-block flex">
+          <button class="btn btn-dark-blue btn-share" title="Поделиться" @click="isOpenShare = !isOpenShare" :class="{'btn-share__opened': isOpenShare}"/>
+          <div class="btn-block flex" v-show="isOpenShare">
+            <a href="https://instagram.com" class="share_link insta block" title="Instagram"></a>
+            <a href="https://telegram.org" class="share_link tg block" title="Telegram"></a>
+            <a href="https://vk.com" class="share_link vk block" title="vkontakte"></a>
+            <a href="https://whatsapp.com" class="share_link wa block" title="WhatsApp"></a>
+          </div>
+        </div>
+        <div class="btn btn-dark-blue btn-send-bid center-xs">Отправить заявку</div>
       </div>
     </div>
   </div>
@@ -103,24 +121,37 @@
 <script>
 import User from "../../resource/installer-user.json";
 import InstallerObject from "./InstallerObject";
-import VModal from 'vue-js-modal';
+import Draggable from "vuedraggable";
 
 export default {
   name: "Portfolio",
   data() {
     return {
-      user: User
+      user: User,
+      isOpenShare: false,
+      drag: false
     }
   },
   components: {
-    VModal,
-    InstallerObject
+    InstallerObject,
+    Draggable
+  },
+  computed: {
+    dragOptions() {
+      return {
+        animation: 200,
+        group: "description",
+        disabled: false,
+        ghostClass: "ghost"
+      };
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../css/variables/variables";
+
 .installer-portfolio {
   height: 100%;
   background-color: $gray5;
@@ -205,5 +236,79 @@ export default {
   .objects_info {
     margin-bottom: 24px;
   }
+  .btn-share {
+    width: 46px;
+    height: 46px;
+    background: $dark-blue url("../../assets/image/icons/share_closed.svg") 50% 50% no-repeat;
+    margin-right: 24px;
+
+    &:hover {
+      background-color: $gray6;
+      background-image: url("../../assets/image/icons/share_hover.svg");
+    }
+    &.btn-share__opened {
+      background-color: transparent;
+      background-image: url("../../assets/image/icons/share.svg");
+    }
+  }
+  .share_link {
+    width: 46px;
+    height: 46px;
+    margin-right: 16px;
+    background-color: transparent;
+    &:hover {
+      background-color: $gray6;
+    }
+  }
+
+  .insta {
+    background-image: url("../../assets/image/icons/instagram.svg");
+    &:hover {
+      background-image: url("../../assets/image/icons/instagram_hover.svg");
+    }
+  }
+  .tg {
+    background-image: url("../../assets/image/icons/telegram.svg");
+    &:hover {
+      background-image: url("../../assets/image/icons/telegram_hover.svg");
+    }
+  }
+  .vk {
+    background-image: url("../../assets/image/icons/vk.svg");
+    &:hover {
+      background-image: url("../../assets/image/icons/vk_hover.svg");
+    }
+  }
+  .wa {
+    background-image: url("../../assets/image/icons/whatsapp.svg");
+    &:hover {
+      background-image: url("../../assets/image/icons/whatsapp_hover.svg");
+    }
+  }
+  .btn-send-bid {
+    width: 217px;
+  }
+  //transition-block
+  .list-transition {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flip-list-move {
+    transition: transform 0.5s;
+  }
+  .no-move {
+    transition: transform 0s;
+  }
+  .ghost {
+    opacity: 0.5;
+    background: #c8ebfb;
+  }
+  .list-group {
+    min-height: 20px;
+  }
+  .list-group-item {
+    cursor: pointer;
+  }
+  //transition-block
 }
 </style>
