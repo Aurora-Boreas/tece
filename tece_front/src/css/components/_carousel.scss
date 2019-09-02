@@ -1,0 +1,22 @@
+//global styles for vue-carousel slider
+
+  .VueCarousel {
+    .VueCarousel-navigation {
+      .VueCarousel-navigation-button {
+        font-size: 0;
+
+        height: 18px;
+        width: 18px;
+      }
+      .VueCarousel-navigation-prev {
+        background: url("./../assets/image/icons/arrow_slider_left.svg");
+        left: 20px;
+      }
+      .VueCarousel-navigation-next {
+        background: url("./../assets/image/icons/arrow_slider.svg");
+        right: 20px;
+      }
+    }
+
+  }
+

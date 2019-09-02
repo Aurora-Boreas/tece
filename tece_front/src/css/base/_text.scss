@@ -1,0 +1,113 @@
+//Metronic Pro
+@font-face {
+  font-family: 'Metronic Pro';
+  src:url('/assets/fonts/Metronic/Metronic_Pro_Regular.eot');
+  src:url('/assets/fonts/Metronic/Metronic_Pro_Regular.eot') format('embedded-opentype'),
+  url('/assets/fonts/Metronic/Metronic_Pro_Regular.woff') format('woff'),
+  url('/assets/fonts/Metronic/Metronic_Pro_Regular.woff2') format('woff2'),
+  url('/assets/fonts/Metronic/Metronic_Pro_Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metronic Pro';
+  src:url('/assets/fonts/Metronic/Metronic_Pro_SemiBold.eot');
+  src:url('/assets/fonts/Metronic/Metronic_Pro_SemiBold.eot') format('embedded-opentype'),
+  url('/assets/fonts/Metronic/Metronic_Pro_SemiBold.woff') format('woff'),
+  url('/assets/fonts/Metronic/Metronic_Pro_SemiBold.woff2') format('woff2'),
+  url('/assets/fonts/Metronic/Metronic_Pro_SemiBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+//ProximaNova
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_ExtraBold.eot');
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_ExtraBold.eot') format('embedded-opentype'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_ExtraBold.woff') format('woff'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_ExtraBold.woff2') format('woff2'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_Bold.eot');
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_Bold.eot') format('embedded-opentype'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_Bold.woff') format('woff'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_Bold.woff2') format('woff2'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_SemiBold.eot');
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_SemiBold.eot') format('embedded-opentype'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_SemiBold.woff') format('woff'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_SemiBold.woff2') format('woff2'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_Regular.eot');
+  src:url('/assets/fonts/ProximaNova/Proxima_Nova_Regular.eot') format('embedded-opentype'),
+  url('~/assets/fonts/ProximaNova/Proxima_Nova_Regular.woff') format('woff'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_Regular.woff2') format('woff2'),
+  url('/assets/fonts/ProximaNova/Proxima_Nova_Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('/assets/fonts/ProximaNova/Proxima Nova Light.eot');
+  src:url('/assets/fonts/ProximaNova/Proxima Nova Light.eot') format('embedded-opentype'),
+  url('/assets/fonts/ProximaNova/Proxima Nova Light.woff') format('woff'),
+  url('/assets/fonts/ProximaNova/Proxima Nova Light.woff2') format('woff2'),
+  url('/assets/fonts/ProximaNova/Proxima Nova Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+// Global styles for text
+body {
+  font-size: 14px;
+  font-family: 'Proxima Nova', 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.metronic {
+  font-family: 'Metronic Pro', 'Roboto', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.weight-200 {
+  font-weight: 200;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
